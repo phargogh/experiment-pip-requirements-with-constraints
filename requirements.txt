@@ -1,0 +1,5 @@
+# Requirements.txt contains functional library requirements.
+#
+# This file should be changed when the library's API changes and we rely on
+# those modifications.
+scipy>=1.6.0

@@ -1,0 +1,7 @@
+# Constraints.txt contains detailed modifications to packages in
+# requirements.txt
+#
+# This file should be modified when we have specific versions of a package
+# that need to be installed for a particular purpose (such as for the InVEST
+# binaries).
+https://files.pythonhosted.org/packages/d8/bf/fcbe42bf8b0abaae4fa7de05bcc5942a8c1e526200150e330de773e249c8/scipy-1.8.0-cp39-cp39-macosx_10_9_x86_64.whl; platform_system=='Darwin' and python_version=='3.9'
