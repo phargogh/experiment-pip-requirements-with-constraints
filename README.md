@@ -21,7 +21,7 @@ however the documentation is quite light.  Because the intent of the
 constraints file is to place limitations on the packages being installed, I
 suspect we can use this to force pip to install the `scipy` build we're looking for.
 
-## Setup
+## Setup and Testing
 
 ```
 $ mamba create -p ./env -c conda-forge -y python=3.9
@@ -33,3 +33,7 @@ $ pip install -r requirements.txt -c constraints.txt
 
 * On my M1 mac, if I `pip install scipy --platform macosx_10_9_x86_64  --python-version="3.9" --only-binary scipy --no-deps`, I get the correct wheel.
 * Looks like we can specify which wheel to use!  We can provide the URL to the pypi-hosted wheel to use for scipy in constraints.txt.
+
+## Conclusion
+
+Providing a URL to the specific wheel we want is a valid constraint for the requirement.
