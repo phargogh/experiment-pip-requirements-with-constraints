@@ -32,7 +32,8 @@ $ pip install -r requirements.txt -c constraints.txt
 ## Notes from experimentation
 
 * On my M1 mac, if I `pip install scipy --platform macosx_10_9_x86_64  --python-version="3.9" --only-binary scipy --no-deps`, I get the correct wheel.
-* Looks like we can specify which wheel to use!  We can provide the URL to the pypi-hosted wheel to use for scipy in constraints.txt.
+* Specifying an installation option via `scipy --install-option"--platform macosx_10_9_x86_64"` automatically disables the use of wheels, which defeats the whole point of this.
+* Looks like we can specify which wheel to use!  We can provide the URL to the pypi-hosted wheel to use for scipy in constraints.txt.  This is probably a good-enough solution for the time being.
 
 ## Conclusion
 
